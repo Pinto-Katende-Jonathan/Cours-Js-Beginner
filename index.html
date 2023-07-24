@@ -38,7 +38,7 @@
             default:
                 console.log('vous avez saisie une valeur inconnue')
                 break;
-        }*/
+        }
 
         let result;
 
@@ -73,7 +73,25 @@
             default:
                 console.log('l\'opération est différente de + ou -')
                 break;
-        }
+        }*/
+
+        // Scope des variables
+
+        // Variable globale
+        let age = 17 
+
+        switch(age){
+            case 17:
+                // Variable locale
+                const name = 'John'
+                console.log(age)
+                break;
+            default:
+                console.log('Fin')
+        }  
+
+        console.log(name)
+
      </script>
 
 </body>
