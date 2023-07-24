@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <h1>Hello tout le monde</h1>
+    <script>
+        /*
+        if (val > 0){
+            console.log('la valeur est positive')
+        }else if(val < 0){
+            console.log('la valeur est négative')
+        }else{
+            console.log('la valeur est nulle')
+        }*/
+        
+/*        let val = prompt('Quel est votre age ?')
+        val = Number(val)
+        let letter = 'l'
+
+        switch(val){
+            case 0:
+                if(letter === 'l'){
+                    console.log('vous avez saisie une lettre l')
+                }
+                else{
+                    console.log('la lettre est différente de l')
+                }
+                   console.log('vous avez saisie une valeur nulle')
+                break;
+            case 1:
+                console.log('vous avez saisie une valeur 1')
+                break;
+            default:
+                console.log('vous avez saisie une valeur inconnue')
+                break;
+        }*/
+
+        let result;
+
+        let numb1 = prompt('Quel est votre premier nombre ?')
+        let numb2 = prompt('Quel est votre deuxieme nombre ?')
+
+        let operation = prompt('Quelle est votre opération ?')
+
+        numb1 = Number(numb1)
+        numb2 = Number(numb2)
+
+        switch(operation){
+            case '+':
+                result = numb1 + numb2
+
+                if(result > 0){
+                    console.log(`${numb1} + ${numb2} = ${result} est positif`)
+                }
+                else{
+                    console.log(`${numb1} + ${numb2} = ${result} est négatif`)
+                }
+                break;
+            case '-':
+                result = numb1 - numb2
+                if(result > 0){
+                    console.log(`${numb1} + ${numb2} = ${result} est positif`)
+                }
+                else{
+                    console.log(`${numb1} + ${numb2} = ${result} est négatif`)
+                }
+                break;
+            default:
+                console.log('l\'opération est différente de + ou -')
+                break;
+        }
+     </script>
+
+</body>
+</html>
