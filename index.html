@@ -1,15 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
-    
+  </head>
+  <body>
     <h1>Hello tout le monde</h1>
     <script>
-        /*
+      /*
         if (val > 0){
             console.log('la valeur est positive')
         }else if(val < 0){
@@ -17,8 +16,8 @@
         }else{
             console.log('la valeur est nulle')
         }*/
-        
-/*        let val = prompt('Quel est votre age ?')
+
+      /*        let val = prompt('Quel est votre age ?')
         val = Number(val)
         let letter = 'l'
 
@@ -75,10 +74,10 @@
                 break;
         }*/
 
-        // Scope des variables
+      // Scope des variables
 
-        // Variable globale
-    /*    let age = 17 
+      // Variable globale
+      /*    let age = 17 
 
         switch(age){
             case 17:
@@ -92,11 +91,11 @@
 
         console.log(name)
         */
-        //const age = Number(prompt('Quel est votre age : '));
-/*        let majeur = age >= 18 ? "Majeur" : "Mineur";
+      //const age = Number(prompt('Quel est votre age : '));
+      /*        let majeur = age >= 18 ? "Majeur" : "Mineur";
         console.log(majeur);*/
 
-/*        if(age < 0){
+      /*        if(age < 0){
             //console.log('Age invalide');
             alert('age invalide');
         }else{
@@ -111,10 +110,108 @@
 */
       //  console.log(confirm('Voulez-vous continuer ?'));
 
-      if (0){
+      /*      if (0){
         alert('Je suis true')
-      }
-     </script>
+      } */
 
-</body>
+      // Les boucles
+
+      //while
+      //initialisation
+      /*      let x = 0;
+
+      while(x <= 10){ // Point d'arrêt
+        // Instruction
+        console.log(x)
+
+        //Pas
+        //x = x + 1;
+        x++;
+      }*/
+
+      /*      let x = 10;
+
+      while(x > 0){ // Point d'arrêt
+        // Instruction
+        console.log(x)
+
+        //Pas
+        //x = x + 1;
+        x = x - 2;
+      }
+      */
+
+      /*      let question = true
+
+      while(question){
+          let contin = confirm('Voulez-vous continuer ?')
+
+          if(contin){
+            contin = confirm('Voulez-vous continuer à jouer ?') 
+          }else{
+            question = false
+            console.log('vous avez refusé')
+          }
+      }
+      */
+
+      //do while
+      //---------
+
+      /*      let x = 10;
+
+      do{ // Point d'arrêt
+        // Instruction
+        console.log(x)
+
+        //Pas
+        //x = x + 1;
+        x = x - 2;
+      }while(x > 0); */
+
+      // for
+      //----
+
+      /*      for(let x = 0; x <= 10; x++){
+        coi, "x", multiplication, "=", i*multiplicationnsole.log(x)
+      } */
+
+      /*      for(let i = 1; i < 11; i++){
+        const multiplication = 2
+
+        console.log(`${i} x ${multiplication} = ${i*multiplication}`)
+      } */
+
+      /*      const notes = [1,2,3]
+
+      let somme = 0
+
+    for(let i = 0; i < notes.length; i++){
+        somme = somme + notes[i]
+      }
+
+      console.log(somme)*/
+
+      /*  const object = { a: 1, b: 2, c: 3 };
+
+      let notes = [1,8,5,4,5]
+
+      for(let i in notes){
+          console.log(notes[i])
+      }*/
+
+/*      const eleves = ["Jean", "Marc", "Marie"];
+      for (const el of eleves) {
+        console.log(el);    
+        // affichera alternativement : Jean, Marc, Marie
+      }*/
+
+      for(let i = 1; i<6; i++){
+          for(let j =1; j < 5; j++){
+            console.log("* ");
+          }
+          console.log("\n");
+      }
+    </script>
+  </body>
 </html>
