@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Correction Tp</title>
+</head>
+<body>
+    
+    <script>
+        const name = prompt('Quel est votre nom ?');
+        let playGame = confirm('Voulez-vous jouer ?');
+        const possibility = ["pierre", "papier", "ciseaux"];
+        
+        if(playGame ===  false){
+            alert('On se voit prochainement');
+        }
+        
+        while(playGame){
+            let choice = prompt("Choisissez entre pierre, papier ou ciseaux");
+            
+            if(possibility.includes(choice.toLocaleLowerCase())){
+                choice = choice.toLocaleLowerCase();
+                let rand = Math.floor(Math.random()*3)
+                let computerChoice = possibility[rand];
+
+                alert(`${name} choisi :  ${choice}\nLe robot a choisi : ${computerChoice}`);
+                
+                if(choice === computerChoice){
+                    alert("Egalité");
+                    playGame = confirm("Voulez-vous continuer")
+                }else {
+                    if(choice === "pierre" && computerChoice === "papier"){
+                        alert("Vous avez gagné");
+                        playGame = confirm("Voulez-vous continuer")
+                    }else if(choice === "pierre" && computerChoice === "ciseaux"){
+                        alert("Vous avez gagné");
+                        playGame = confirm("Voulez-vous continuer")
+                    }else if(choice === "papier" && computerChoice === "pierre"){
+                        alert("Vous avez perdu");
+                        playGame = confirm("Voulez-vous continuer")
+                    }else if(choice === "papier" && computerChoice === "ciseaux"){
+                        alert("Vous avez perdu");
+                        playGame = confirm("Voulez-vous continuer")
+                    }else if(choice ==="ciseaux" && computerChoice === "papier"){
+                        alert("Vous avez gagné");
+                        playGame = confirm("Voulez-vous continuer")
+                    }else if(choice ==="ciseaux" && computerChoice === "pierre"){
+                        alert("Vous avez perdu");
+                        playGame = confirm("Voulez-vous continuer")
+                    }
+                }
+            }else{
+                alert("Choisissez une valeur valide")
+                playGame = false
+                break;
+            }
+        }
+
+    </script>
+</body>
+</html>
