@@ -21,8 +21,7 @@
             choice = choice?.toLocaleLowerCase();
             
             if(possibility.includes(choice)){
-                let rand = Math.floor(Math.random()*3)
-                let computerChoice = possibility[rand];
+                let computerChoice = possibility[Math.floor(Math.random()*3)];
 
                 alert(`${name} choisi :  ${choice}\nLe robot a choisi : ${computerChoice}`);
                 
