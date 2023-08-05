@@ -18,9 +18,9 @@
         
         while(playGame){
             let choice = prompt("Choisissez entre pierre, papier ou ciseaux");
+            choice = choice?.toLocaleLowerCase();
             
-            if(possibility.includes(choice.toLocaleLowerCase())){
-                choice = choice.toLocaleLowerCase();
+            if(possibility.includes(choice)){
                 let rand = Math.floor(Math.random()*3)
                 let computerChoice = possibility[rand];
 
